@@ -17,7 +17,6 @@ type PointerObj struct {
 var SYS = pf.CreateWrapper()
 
 func init() {
-	SYS.GlobalDateUpdate = GlobalDateUpdate
 	SYS.GlobalName = GlobalName
 
 	SYS.NumBase = NumBase
