@@ -2,16 +2,22 @@ package UID
 
 import pf "github.com/Bookshelf-Writer/PointerFactory"
 
-/* Добавляем типы */
+//////////////////////////////////////////////////////////////////////////////
 
 const (
-	TypeN1 pf.TypeTag = iota + 1
-	TypeN2
-	TypeS
+	TypeNone = pf.TypeNone
+
+	TypeBook   pf.TypeTag = 30 // Книга
+	TypeAuthor pf.TypeTag = 32 // Автор
+
+	TypeUser pf.TypeTag = 50 // Пользователь
 )
 
 func init() {
-	SYS.TypeMAP['b'] = TypeN1
-	SYS.TypeMAP['k'] = TypeN2
-	SYS.TypeMAP['r'] = TypeS
+	SYS.TypeMAP['0'] = TypeNone
+
+	SYS.TypeMAP['b'] = TypeBook
+	SYS.TypeMAP['a'] = TypeAuthor
+
+	SYS.TypeMAP['u'] = TypeUser
 }
