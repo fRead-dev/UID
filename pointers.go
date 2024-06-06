@@ -11,7 +11,7 @@ const (
 )
 
 func init() {
-	SYS.TypeMAP['1'] = TypeN1
-	SYS.TypeMAP['2'] = TypeN2
-	SYS.TypeMAP['s'] = TypeS
+	SYS.TypeMAP['b'] = TypeN1
+	SYS.TypeMAP['k'] = TypeN2
+	SYS.TypeMAP['r'] = TypeS
 }

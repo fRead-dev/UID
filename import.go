@@ -6,12 +6,21 @@ type WrapperObj struct {
 	pf.WrapperObj
 }
 
-var SYS = pf.CreateWrapper()
-
 type CreatorObj struct {
 	pf.CreatorObj
 }
 
 type PointerObj struct {
 	pf.PointerObj
+}
+
+var SYS = pf.CreateWrapper()
+
+func init() {
+	SYS.GlobalVersion = GlobalVersion
+	SYS.GlobalDateUpdate = GlobalDateUpdate
+	SYS.GlobalName = GlobalName
+
+	SYS.NumBase = NumBase
+	SYS.YearPoint = YearPoint
 }
